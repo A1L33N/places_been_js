@@ -10,7 +10,7 @@
     <div class="container">
       <h1>Places You've Been</h1>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <form id="new-place">
 
             <div class="form-group">
@@ -26,7 +26,38 @@
               <input type="text" class="form-control" id="country" required="">
             </div>
 
+            <!-- multiple landmarks form -->
+            <div id="new-landmarks">
+              <div class="new-landmark">
+                <div class="form-group">
+                  <label for="landmark-name">Landmark</label>
+                  <input type="text" class="form-control landmark-name" placeholder="Optional">
+                </div>
+              </div>
+            </div>
+
+            <!-- multiple activities form -->
+            <div id="new-activities">
+              <div class="new-activity">
+                <div class="form-group">
+                  <label for="activity-name">Activity</label>
+                  <input type="text" class="form-control activity-name" placeholder="Optional">
+                </div>
+              </div>
+            </div>
+
+              <span class="btn btn-primary" id="add-landmark">Add another landmark</span>
+              <span class="btn btn-primary" id="add-activity">Add another activity</span>
+              <button type="submit" class="btn btn-success">Add Place</button>
           </form>
+
+          <h2>Places</h2>
+          <ul id="places"></ul>
+          <div id="show-places">
+            <h2></h2>
+            <ul id="landmarks"></ul>
+            <ul id="activities"></ul>
+          </div>
         </div>
       </div>
     </div>
